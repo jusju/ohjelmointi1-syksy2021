@@ -1,0 +1,15 @@
+package viikko2;
+
+import java.util.Scanner;
+
+public class Ylinopeus {
+
+	public static void main(String[] args) {
+		// SKANNERIN LUONTI - AINA
+		Scanner input = new Scanner(System.in);
+		
+		// Kerro nopeus: 90
+
+	}
+
+}

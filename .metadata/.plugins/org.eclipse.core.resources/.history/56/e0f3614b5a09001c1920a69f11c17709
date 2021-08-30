@@ -1,0 +1,10 @@
+package viikko2;
+
+public class Kiinteisto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
