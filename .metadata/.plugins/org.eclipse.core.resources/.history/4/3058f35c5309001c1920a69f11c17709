@@ -1,0 +1,33 @@
+package viikko2;
+
+import java.util.Scanner;
+
+public class Juhlat {
+
+	public static void main(String[] args) {
+		// SKANNERIN LUONTI
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Anna juhliin tulevien aikuisten määrä: ");
+		int aikuistenLukumaara = input.nextInt();
+		
+		// 7 LASIA YHDESTA PULLOSTA, 23 HENKILOA, PULLOJA 4
+		// 23      4 * 7 = 28
+		// 23 / 7
+		// JAKOLASKUSTA SAADAAN DESIMAALI, JOS JAETAAN DESIMAALI
+		// LUVULLA 
+		double pullojenMaara = aikuistenLukumaara / 7.0;
+		// "PYÖRISTETÄÄN" YLÖSPÄIN
+		double alkostaHaetaanPulloja = Math.ceil(pullojenMaara);
+		
+		System.out.println("Pulloja tarvitaan " + alkostaHaetaanPulloja + " kappaletta");
+		System.out.println("Viimeisestä pullosta jää 5 lasia");
+
+		int viimeisestaPullostaJaa = (alkostaHaetaanPulloja * 7) - aikuistenLukumaara;
+		System.out.println();
+		// Anna juhliin tulevien aikuisten määrä: 23
+		// Pulloja tarvitaan 4 kappaletta
+		// Viimeisestä pullosta jää 5 lasia
+	}
+
+}

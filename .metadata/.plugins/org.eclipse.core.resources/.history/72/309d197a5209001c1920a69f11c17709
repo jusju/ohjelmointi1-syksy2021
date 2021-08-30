@@ -1,0 +1,21 @@
+package viikko2;
+
+import java.util.Scanner;
+
+public class Juhlat {
+
+	public static void main(String[] args) {
+		// SKANNERIN LUONTI
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Anna juhliin tulevien aikuisten m‰‰r‰: ");
+		int aikuistenLukumaara = input.nextInt();
+		System.out.println("Pulloja tarvitaan 4 kappaletta");
+		System.out.println("Viimeisest‰ pullosta j‰‰ 5 lasia");
+
+		// Anna juhliin tulevien aikuisten m‰‰r‰: 23
+		// Pulloja tarvitaan 4 kappaletta
+		// Viimeisest‰ pullosta j‰‰ 5 lasia
+	}
+
+}
