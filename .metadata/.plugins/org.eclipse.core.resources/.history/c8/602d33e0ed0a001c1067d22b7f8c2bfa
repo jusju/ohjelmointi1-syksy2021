@@ -1,0 +1,20 @@
+package viikko2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Ylevero {
+
+	public static void main(String[] args) {
+		// SKANNERIN LUONTI
+		Scanner input = new Scanner(System.in);
+		// DECIMALFORMATTERIN LUONTI KAHDEN DESIMAALIN TARKKUUDELLE
+		DecimalFormat desimaalit = new DecimalFormat("0.00");
+		
+		
+		// Anna vuositulosi ja ikäsi: 9000 21
+		// Ylevero on 0,00
+
+	}
+
+}
