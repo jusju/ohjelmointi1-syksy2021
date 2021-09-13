@@ -9,21 +9,16 @@ public class Lumi {
 		// ESITELLAAN KERRYTYSROOLINEN MUUTTUJA
 		// HUOMAA MENTAL MODELLI
 		int nimimaara = 0;
-		int lumimaara = 0;
+		
 		while(nimi.equals("LOPPU") == false) {
 			System.out.print("Anna nimi: ");
 			nimi = lukija.nextLine();
 			nimimaara = nimimaara + 1;
-			if(nimi.equalsIgnoreCase("lumi") == true) {
-				lumimaara = lumimaara + 1;
-			}
 		}
-		// MYÖS LOPPU KASVATTAA NIMIMÄÄRÄÄ
-		// ELI VÄHENNETÄÄN YKSI
-		nimimaara = nimimaara - 1;
 		
 		System.out.println("Nimiä oli " + nimimaara + " kappaletta.");
-		System.out.println("Nimi Lumi esiintyi " + lumimaara + " kertaa.");
+
+		
 		
 	}
 }

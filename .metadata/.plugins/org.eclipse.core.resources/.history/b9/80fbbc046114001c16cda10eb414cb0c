@@ -23,7 +23,8 @@ public class Lumi {
 		nimimaara = nimimaara - 1;
 		
 		System.out.println("Nimiä oli " + nimimaara + " kappaletta.");
-		System.out.println("Nimi Lumi esiintyi " + lumimaara + " kertaa.");
+
+		
 		
 	}
 }
