@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AsunnonMyynti {
 
 	// METODI JOKA KYSYY KÄYTTÄJÄLTÄ MYYNTIHINNAN
-	// PALAUTTAA ANNETUN MYYNTIHINNAN
+	// PALAUTTAA ANNETUN 
 	public static double kysyMyyntihinta() {
 		Scanner lukija = new Scanner(System.in);
 		System.out.println("Anna myyntihinta: ");
