@@ -1,0 +1,10 @@
+package viikko5;
+
+public class AsunnonMyynti {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
