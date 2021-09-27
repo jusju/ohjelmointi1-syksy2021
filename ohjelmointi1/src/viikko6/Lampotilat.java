@@ -9,29 +9,25 @@ public class Lampotilat {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		Lampotilat olio = new Lampotilat();
-
+		final int MAX = 99;
 		int i = 0;
 		int mittaus = 0;
 		int mittaukset = 0;
 		// LUODAAN TAULUKKO
-		int[] lampotilat = null;
-		final int MAX = 99;
+		int[] lampotilat = new int[MAX];
+
 		// METODIA KUTSUTAAN JA PALAUTTAA ARVON
 		int maara = olio.kysyLampotilat(lampotilat, MAX);
 		
-		int[] tulostettavatLampotilat = new int[mittaukset - 1];
-		for (int j = 0; j < tulostettavatLampotilat.length; j++) {
-			tulostettavatLampotilat[j] = lampotilat[j];
-		}
-		int mittaustenMaara = olio.kysyLampotilat(lampotilat, MAX);
-		olio.naytaLampotilat(tulostettavatLampotilat, mittaustenMaara);
+		olio.naytaLampotilat(lampotilat, maara);
+		
+
 	}
 	// METODIN MAARITYS
 	public int kysyLampotilat(int[] lampotilat, final int MAX) {
 		Scanner input = new Scanner(System.in);
-		// LUODAAN APUTAULUKKO, KOSKA TÄYTYY OLLA TAULUKKO, JOLLE ON ANNETTU KOKO
-		// TOISIN KUIN LISTOJA VOI LUODA ILMAN KOKOA
-		int[] aputaulukko = new int[99];
+
+		int[] aputaulukko = new int[MAX];
 		int mittaus = 0;
 		int mittaustenMaara = 0;
 		while (mittaus != -999 && mittaustenMaara <= MAX) {
@@ -47,8 +43,9 @@ public class Lampotilat {
 		int indeksi = 0;
 
 		int[] oikeanKokoinenTaulukko = new int[mittaustenMaara];
-		while(indeksi <= 99) {
+		while(indeksi < oikeanKokoinenTaulukko.length) {
 			oikeanKokoinenTaulukko[indeksi] = aputaulukko[indeksi];
+			indeksi++;
 		}
 		
 		// SIJOITETAAN APUTAULUKKO PARAMETRINA TULLEESEEN TAULUKKOON
