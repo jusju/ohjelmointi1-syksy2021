@@ -24,33 +24,22 @@ public class Lampotilat {
 	public int kysyLampotilat(int[] lampotilat, final int MAX) {
 		Scanner input = new Scanner(System.in);
 
-		int[] aputaulukko = new int[MAX];
-		int mittaus = 0;
-		int mittaustenMaara = 0;
-		while (mittaus != -999 && mittaustenMaara < MAX) {
+		int lampo = 0;
+		int lkm = 0;
+		while (lampo != -999 && lkm < MAX) {
 			System.out.println("Anna lämpötila: ");
-			mittaus = input.nextInt();	
-			if(mittaus == -999) {
+			lampo = input.nextInt();	
+			if(lampo == -999) {
 				break;
 			}
-			aputaulukko[mittaustenMaara] = mittaus;
-			mittaustenMaara++;
+			lampotilat[lkm] = lampo;
+			lkm++;
 		}
 		// SEURAAVAKSI HANKKIUDUTAAN EROON TURHISTA ISOISTA TAULUKOISTA
 		int indeksi = 0;
 
-		int[] oikeanKokoinenTaulukko = new int[mittaustenMaara];
-		while(indeksi < oikeanKokoinenTaulukko.length) {
-			oikeanKokoinenTaulukko[indeksi] = aputaulukko[indeksi];
-			indeksi++;
-		}
-		
-		// SIJOITETAAN APUTAULUKKO PARAMETRINA TULLEESEEN TAULUKKOON
-		for (int i = 0; i < oikeanKokoinenTaulukko.length; i++) {
-			lampotilat[i] = oikeanKokoinenTaulukko[i];
-		}
-		Arrays.sort(lampotilat, 0, mittaustenMaara);		
-		return mittaustenMaara;
+		Arrays.sort(lampotilat, 0, lkm);		
+		return lkm;
 	}
 
 	public void naytaLampotilat(int[] lampotilat, int lkm) {
