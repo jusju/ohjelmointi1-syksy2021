@@ -1,7 +1,6 @@
 package viikko6;
 
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Lampotilat {
@@ -9,10 +8,8 @@ public class Lampotilat {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		Lampotilat olio = new Lampotilat();
-		final int MAX = 99;
-		int i = 0;
-		int mittaus = 0;
-		int mittaukset = 0;
+		final int MAX = 100;
+
 		// LUODAAN TAULUKKO
 		int[] lampotilat = new int[MAX];
 
@@ -30,7 +27,7 @@ public class Lampotilat {
 		int[] aputaulukko = new int[MAX];
 		int mittaus = 0;
 		int mittaustenMaara = 0;
-		while (mittaus != -999 && mittaustenMaara <= MAX) {
+		while (mittaus != -999 && mittaustenMaara < MAX) {
 			System.out.println("Anna lämpötila: ");
 			mittaus = input.nextInt();	
 			if(mittaus == -999) {
@@ -50,7 +47,7 @@ public class Lampotilat {
 		
 		// SIJOITETAAN APUTAULUKKO PARAMETRINA TULLEESEEN TAULUKKOON
 		lampotilat = oikeanKokoinenTaulukko;
-		Arrays.sort(lampotilat);		
+		Arrays.sort(lampotilat, 0, mittaustenMaara);		
 		return mittaustenMaara;
 	}
 
