@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;viikko5.Dominoin.java&apos; to &apos;Dominion.java&apos;&#x0D;&#x0A;- Original project: &apos;ohjelmointi1&apos;&#x0D;&#x0A;- Original element: &apos;viikko5.Dominoin.java&apos;&#x0D;&#x0A;- Renamed element: &apos;viikko5.Dominion.java&apos;" description="Rename compilation unit &apos;Dominoin.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;viikko5{Dominoin.java" name="Dominion.java" references="false" stamp="1632121577547" version="1.0"/>
+</session>

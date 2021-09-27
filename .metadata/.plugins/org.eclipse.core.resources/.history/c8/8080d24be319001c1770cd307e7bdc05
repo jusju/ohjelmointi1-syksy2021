@@ -1,0 +1,37 @@
+package viikko5;
+
+import java.util.Scanner;
+
+public class Dominion {
+
+	// MITÄ METODIN MÄÄRITYKSESTÄ PUUTTUU?
+	public int laskepisteet(int kirous, int tila, int pitaja, int laani) {
+		   //laske pisteiden yhteismäärä
+		   //palauta yhteispisteet return-lauseella
+		int pisteet = 0;
+		pisteet = pisteet - kirous * (-1);
+		pisteet = pisteet + (tila * 2);
+		pisteet = pisteet + (pitaja*5);
+		pisteet = pisteet + (laani * 8);
+
+		return pisteet;
+	}
+	
+	public static void main(String[] args) {
+		// OLION LUONTI OLION PERUSLUONTITAVALLA, TÄSSÄ TARVITAAN OLIO
+		// JOTTA METODIA SAADAAN KUTSUTTUA, KOSKA STATIC SANA JÄI NYT POIS
+		Dominion olio = new Dominion();
+		olio.laskepisteet(kirous, tila, pitaja, laani);
+		Scanner lukija = new Scanner(System.in);
+		System.out.print("Anna kirouskorttien määrä: ");
+		int kirous = lukija.nextInt();
+		System.out.print("Anna tilakorttien määrä: ");
+		int tila = lukija.nextInt();		
+		System.out.print("Anna pitäjäkorttien määrä: ");
+		int pitaja = lukija.nextInt();
+		System.out.print("Anna läänikorttien määrä: ");
+		int laani = lukija.nextInt();
+		System.out.println("Pisteiden yhteismäärä on " + pisteet);
+		System.out.print("");
+	}
+}

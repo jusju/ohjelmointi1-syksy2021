@@ -1,0 +1,19 @@
+package viikko5;
+
+public class Dominoin {
+
+	// MITÄ METODIN MÄÄRITYKSESTÄ PUUTTUU?
+	public int laskepisteet(int kirous, int tila, int pitaja, int laani) {
+		   //laske pisteiden yhteismäärä
+		   //palauta yhteispisteet return-lauseella
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		// OLION LUONTI OLION PERUSLUONTITAVALLA, TÄSSÄ TARVITAAN OLIO
+		// JOTTA METODIA SAADAAN KUTSUTTUA, KOSKA STATIC SANA JÄI NYT POIS
+		Dominoin
+
+	}
+
+}

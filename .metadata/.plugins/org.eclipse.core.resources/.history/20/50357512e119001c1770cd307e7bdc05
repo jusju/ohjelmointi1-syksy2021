@@ -1,0 +1,10 @@
+package viikko5;
+
+public class Dominoin {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
