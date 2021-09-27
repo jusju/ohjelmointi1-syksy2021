@@ -46,7 +46,9 @@ public class Lampotilat {
 		}
 		
 		// SIJOITETAAN APUTAULUKKO PARAMETRINA TULLEESEEN TAULUKKOON
-		lampotilat = oikeanKokoinenTaulukko;
+		for (int i = 0; i < oikeanKokoinenTaulukko.length; i++) {
+			lampotilat[i] = oikeanKokoinenTaulukko[i];
+		}
 		Arrays.sort(lampotilat, 0, mittaustenMaara);		
 		return mittaustenMaara;
 	}
@@ -54,7 +56,9 @@ public class Lampotilat {
 	public void naytaLampotilat(int[] lampotilat, int lkm) {
 		System.out.println("Annoit lämpötilat: ");
 		for (int i = 0; i < lampotilat.length; i++) {
-			System.out.print(lampotilat[i] +  " ");
+			if(lampotilat[i] != 0) {
+				System.out.print(lampotilat[i] +  " ");
+			}
 		}
 
 	}
