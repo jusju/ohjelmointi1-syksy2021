@@ -1,15 +1,17 @@
 package viikko7;
 
 public class Henkilo {
+	
 	private String nimi;
 	private String osoite;
 	
 	public Henkilo() {
+		
 	}
-
+	
 	public Henkilo(String nimi, String osoite) {
 		this.nimi = nimi;
-		this.osoite = osoite;
+		this.nimi = osoite;
 	}
 
 	public String getNimi() {
@@ -27,13 +29,25 @@ public class Henkilo {
 	public void setOsoite(String osoite) {
 		this.osoite = osoite;
 	}
+	
+	public void nimiMuutos(String nimi) {
+        this.nimi += nimi;
+  
+    }
+	
+	public void osoiteMuutos(String osoite) {
+        this.osoite += osoite;
+        
+	}    
 
 	@Override
 	public String toString() {
-		return "Henkilo [nimi=" + nimi + ", osoite=" + osoite + "]";
+		if(nimi == null && osoite == null ) {
+			return "Henkilöä ei ole";
+		} else {
+			return "Henkilo [nimi=" + nimi + ", osoite=" + osoite + "]";
+		}
 	}
-	
-	
 	
 	
 }
