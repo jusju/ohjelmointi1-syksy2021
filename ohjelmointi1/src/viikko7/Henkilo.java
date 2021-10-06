@@ -14,6 +14,8 @@ public class Henkilo {
 		this.nimi = osoite;
 	}
 
+   
+
 	public String getNimi() {
 		return nimi;
 	}
@@ -29,16 +31,6 @@ public class Henkilo {
 	public void setOsoite(String osoite) {
 		this.osoite = osoite;
 	}
-	
-	public void nimiMuutos(String nimi) {
-        this.nimi += nimi;
-  
-    }
-	
-	public void osoiteMuutos(String osoite) {
-        this.osoite += osoite;
-        
-	}    
 
 	@Override
 	public String toString() {
