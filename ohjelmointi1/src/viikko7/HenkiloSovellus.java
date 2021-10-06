@@ -37,7 +37,6 @@ public class HenkiloSovellus {
 			} else if (valinta == 3) {
 				System.out.print("Anna nimi: ");
 				String nimi = input.nextLine();
-				input.nextLine();
 				henkilo.nimiMuutos(nimi);
 				
 				System.out.print("Anna osoite: ");
