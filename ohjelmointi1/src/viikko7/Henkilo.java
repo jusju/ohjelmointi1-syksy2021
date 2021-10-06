@@ -34,11 +34,7 @@ public class Henkilo {
 
 	@Override
 	public String toString() {
-		if(nimi == null && osoite == null ) {
-			return "Henkilöä ei ole";
-		} else {
-			return "Henkilo [nimi=" + nimi + ", osoite=" + osoite + "]";
-		}
+		return "Henkilo [nimi=" + nimi + ", osoite=" + osoite + "]";
 	}
 	
 	
